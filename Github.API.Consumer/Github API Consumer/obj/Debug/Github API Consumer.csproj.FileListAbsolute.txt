@@ -1,0 +1,44 @@
+c:\users\ahmed.ghanima\source\repos\Github API Consumer\Github API Consumer\bin\ApplicationInsights.config
+c:\users\ahmed.ghanima\source\repos\Github API Consumer\Github API Consumer\bin\Github API Consumer.dll.config
+c:\users\ahmed.ghanima\source\repos\Github API Consumer\Github API Consumer\bin\Github API Consumer.dll
+c:\users\ahmed.ghanima\source\repos\Github API Consumer\Github API Consumer\bin\Github API Consumer.pdb
+c:\users\ahmed.ghanima\source\repos\Github API Consumer\Github API Consumer\bin\Antlr3.Runtime.dll
+c:\users\ahmed.ghanima\source\repos\Github API Consumer\Github API Consumer\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\ahmed.ghanima\source\repos\Github API Consumer\Github API Consumer\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\ahmed.ghanima\source\repos\Github API Consumer\Github API Consumer\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\ahmed.ghanima\source\repos\Github API Consumer\Github API Consumer\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\ahmed.ghanima\source\repos\Github API Consumer\Github API Consumer\bin\Microsoft.AI.Web.dll
+c:\users\ahmed.ghanima\source\repos\Github API Consumer\Github API Consumer\bin\Microsoft.AI.WindowsServer.dll
+c:\users\ahmed.ghanima\source\repos\Github API Consumer\Github API Consumer\bin\Microsoft.ApplicationInsights.dll
+c:\users\ahmed.ghanima\source\repos\Github API Consumer\Github API Consumer\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\ahmed.ghanima\source\repos\Github API Consumer\Github API Consumer\bin\Microsoft.Web.Infrastructure.dll
+c:\users\ahmed.ghanima\source\repos\Github API Consumer\Github API Consumer\bin\Newtonsoft.Json.dll
+c:\users\ahmed.ghanima\source\repos\Github API Consumer\Github API Consumer\bin\Octokit.dll
+c:\users\ahmed.ghanima\source\repos\Github API Consumer\Github API Consumer\bin\System.Web.Helpers.dll
+c:\users\ahmed.ghanima\source\repos\Github API Consumer\Github API Consumer\bin\System.Web.Mvc.dll
+c:\users\ahmed.ghanima\source\repos\Github API Consumer\Github API Consumer\bin\System.Web.Optimization.dll
+c:\users\ahmed.ghanima\source\repos\Github API Consumer\Github API Consumer\bin\System.Web.Razor.dll
+c:\users\ahmed.ghanima\source\repos\Github API Consumer\Github API Consumer\bin\System.Web.WebPages.Deployment.dll
+c:\users\ahmed.ghanima\source\repos\Github API Consumer\Github API Consumer\bin\System.Web.WebPages.dll
+c:\users\ahmed.ghanima\source\repos\Github API Consumer\Github API Consumer\bin\System.Web.WebPages.Razor.dll
+c:\users\ahmed.ghanima\source\repos\Github API Consumer\Github API Consumer\bin\WebGrease.dll
+c:\users\ahmed.ghanima\source\repos\Github API Consumer\Github API Consumer\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\ahmed.ghanima\source\repos\Github API Consumer\Github API Consumer\bin\Octokit.xml
+c:\users\ahmed.ghanima\source\repos\Github API Consumer\Github API Consumer\bin\System.Web.Helpers.xml
+c:\users\ahmed.ghanima\source\repos\Github API Consumer\Github API Consumer\bin\System.Web.Mvc.xml
+c:\users\ahmed.ghanima\source\repos\Github API Consumer\Github API Consumer\bin\System.Web.Optimization.xml
+c:\users\ahmed.ghanima\source\repos\Github API Consumer\Github API Consumer\bin\System.Web.Razor.xml
+c:\users\ahmed.ghanima\source\repos\Github API Consumer\Github API Consumer\bin\System.Web.WebPages.xml
+c:\users\ahmed.ghanima\source\repos\Github API Consumer\Github API Consumer\bin\System.Web.WebPages.Deployment.xml
+c:\users\ahmed.ghanima\source\repos\Github API Consumer\Github API Consumer\bin\System.Web.WebPages.Razor.xml
+c:\users\ahmed.ghanima\source\repos\Github API Consumer\Github API Consumer\bin\Antlr3.Runtime.pdb
+c:\users\ahmed.ghanima\source\repos\Github API Consumer\Github API Consumer\bin\Newtonsoft.Json.xml
+c:\users\ahmed.ghanima\source\repos\Github API Consumer\Github API Consumer\bin\Microsoft.ApplicationInsights.xml
+c:\users\ahmed.ghanima\source\repos\Github API Consumer\Github API Consumer\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\ahmed.ghanima\source\repos\Github API Consumer\Github API Consumer\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\ahmed.ghanima\source\repos\Github API Consumer\Github API Consumer\bin\Microsoft.AI.WindowsServer.xml
+c:\users\ahmed.ghanima\source\repos\Github API Consumer\Github API Consumer\bin\Microsoft.AI.Web.xml
+c:\users\ahmed.ghanima\source\repos\Github API Consumer\Github API Consumer\obj\Debug\Github API Consumer.csproj.CoreCompileInputs.cache
+c:\users\ahmed.ghanima\source\repos\Github API Consumer\Github API Consumer\obj\Debug\Github API Consumer.dll
+c:\users\ahmed.ghanima\source\repos\Github API Consumer\Github API Consumer\obj\Debug\Github API Consumer.pdb
+c:\users\ahmed.ghanima\source\repos\Github API Consumer\Github API Consumer\obj\Debug\Github API Consumer.csprojResolveAssemblyReference.cache
