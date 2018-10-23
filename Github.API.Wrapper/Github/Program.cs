@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Github
 {
@@ -17,6 +15,30 @@ namespace Github
             Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("token", "4115babe43140c5cd265720a9194e77eb4fba70c");
             Client.DefaultRequestHeaders.Add("User-Agent", "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36");
             Console.WriteLine(Client.GetStringAsync("https://api.github.com/user").Result);
+
+
+
         }
+
+        public string Get(string url, params string[] optionalParameters)
+        {
+            string u = url;
+            foreach (var par in optionalParameters)
+            {
+                u += par; 
+            }
+
+            return Client.GetStringAsync(url).Result;
+        }
+
+        //public string Post(string url, string body)
+        //{
+        //    return Client.Post(url, body);
+        //}
+
+        //public User getCurrentUser()
+        //{
+        //    Get("");
+        //}
     }
 }
