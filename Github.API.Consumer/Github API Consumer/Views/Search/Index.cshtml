@@ -1,33 +1,35 @@
-﻿
-@{
-    ViewBag.Title = "Index";
-}
+﻿<h2> Results </h2>
 
-<h2> Results </h2>
-
-<form method="get"> <input type="text" name="q" value="@Request.QueryString["q"]" />  <button type="submit"> Search </button>  </form>
-
-<table class="table table-dark">
-    <thead>
-        <tr>
-            <th scope="col">#</th>
-            <th scope="col">Name</th>
-            <th scope="col">Description</th>
-            <th scope="col">Language</th>
-            <th scope="col"> Url </th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
+<div class="row">
+    <div class="col-2">
+        <div class="list-group" id="list-tab" role="tablist">
+            <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Repos</a>
+            <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Users</a>
+            <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Issues</a>
+            <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Code</a>
+        </div>
+    </div>
+    <table class="table table-dark col-10">
+        <thead>
             <tr>
-                <td>@item.Id</td>
-                <td>@item.Name</td>
-                <td>@item.Description</td>
-                <td>@item.Language</td>
-                <td><a href="@item.HtmlUrl"> Click here </a> </td>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th>
+                <th scope="col">Language</th>
+                <th scope="col"> Url </th>
             </tr>
-        }
-        
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.Name</td>
+                    <td>@item.Description</td>
+                    <td>@item.Language</td>
+                    <td><a href="@item.HtmlUrl"> Click here </a> </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
