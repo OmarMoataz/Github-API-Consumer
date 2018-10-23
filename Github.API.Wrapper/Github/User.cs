@@ -36,68 +36,77 @@ namespace Github
             Url = url;
         }
 
+        [JsonProperty("avatar_url")]
         public string AvatarUrl { get; protected set; }
 
-
+        [JsonProperty("bio")]
         public string Bio { get; protected set; }
 
-
+        [JsonProperty("blog")]
         public string Blog { get; protected set; }
 
+        [JsonProperty("collaborators")]
         public int? Collaborators { get; protected set; }
 
-
+        [JsonProperty("company")]
         public string Company { get; protected set; }
 
- 
+        [JsonProperty("created_at")]
         public DateTimeOffset CreatedAt { get; protected set; }
 
-
+        [JsonProperty("disk_usage")]
         public int? DiskUsage { get; protected set; }
 
-
+        [JsonProperty("email")]
         public string Email { get; protected set; }
 
-
+        [JsonProperty("followers")]
         public int Followers { get; protected set; }
 
-
+        [JsonProperty("following")]
         public int Following { get; protected set; }
 
-
+        [JsonProperty("hireable")]
         public bool? Hireable { get; protected set; }
 
+        [JsonProperty("html_url")]
         public string HtmlUrl { get; protected set; }
 
+        [JsonProperty("id")]
         public int Id { get; protected set; }
 
 
+        [JsonProperty("node_id")]
         public string NodeId { get; protected set; }
 
-
+        [JsonProperty("location")]
         public string Location { get; protected set; }
 
-
+        [JsonProperty("login")]
         public string Login { get; protected set; }
 
+        [JsonProperty("name")]
         public string Name { get; protected set; }
 
+        [JsonProperty("type")]
         public AccountType? Type { get; protected set; }
 
-
+        [JsonProperty("owned_private_repos")]
         public int OwnedPrivateRepos { get; protected set; }
 
-
+        [JsonProperty("private_gists")]
         public int? PrivateGists { get; protected set; }
 
-        public int PublicGists { get; protected set; }
+        [JsonProperty("public_gists")]
+        public int? PublicGists { get; protected set; }
 
 
+        [JsonProperty("public_repos")]
         public int PublicRepos { get; protected set; }
 
-
+        [JsonProperty("total_private_repos")]
         public int TotalPrivateRepos { get; protected set; }
-
+        [JsonProperty("url")]
         public string Url { get; protected set; }
     }
 }
