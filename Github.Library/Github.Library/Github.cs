@@ -1,5 +1,4 @@
-using Github;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,33 +8,20 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GithubApi
+namespace Github.Library
 {
-    class Program
+    public class Github
     {
-
         static HttpClient Client;
         public const string URL = "https://api.github.com";
-        static void Main(string[] args)
+
+        public Github()
         {
             Client = new HttpClient();
             Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("token", "4115babe43140c5cd265720a9194e77eb4fba70c");
             Client.DefaultRequestHeaders.Add("User-Agent", "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36");
-            //Console.WriteLine(Client.GetStringAsync("https://api.github.com/user").Result);
-            //Repository[] s = getUserRepositories("OmarMoataz");
-
-            //foreach (var repo in s)
-            //{
-            //    Console.WriteLine(repo.Name);
-            //}
-
-            //Repository a = createRepository("test123");
-            //Console.WriteLine(a.HtmlUrl);
-
-            deleteRepository("GithubAccount123123", "test123");
 
         }
-
         public static string Get(string url, params string[] optionalParameters)
         {
             string u = url;
@@ -51,9 +37,9 @@ namespace GithubApi
         {
             var j = JsonConvert.SerializeObject(body);
             var httpContent = new StringContent(j, Encoding.UTF8, "application/json");
-            
+
             var x = Client.PostAsync(url, httpContent);
-            
+
             return await x.Result.Content.ReadAsStringAsync();
         }
 
@@ -67,7 +53,7 @@ namespace GithubApi
 
         public static Repository[] getUserRepositories(string _name) => JsonConvert.DeserializeObject<Repository[]>(Get($"https://api.github.com/users/{_name}/repos"));
 
-        public static Repository createRepository(string _name, string _desc = null, bool _private = false) => JsonConvert.DeserializeObject<Repository>(Task.Run(() =>PostAsync($"{URL}/user/repos",
+        public static Repository createRepository(string _name, string _desc = null, bool _private = false) => JsonConvert.DeserializeObject<Repository>(Task.Run(() => PostAsync($"{URL}/user/repos",
             new Dictionary<string, dynamic>
             {
                 { "name", _name },
@@ -75,9 +61,7 @@ namespace GithubApi
                 { "private", _private }
             })).Result);
 
-        public static HttpStatusCode deleteRepository(string owner, string name) =>  
+        public static HttpStatusCode deleteRepository(string owner, string name) =>
             Client.DeleteAsync($"{URL}/repos/{owner}/{name}").Result.StatusCode;
     }
-
-
 }

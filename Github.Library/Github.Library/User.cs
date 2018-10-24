@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Github
+namespace Github.Library
 {
     public class User
     {
@@ -111,3 +111,4 @@ namespace Github
         public string Url { get; protected set; }
     }
 }
+
