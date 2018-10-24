@@ -1,28 +1,26 @@
-﻿using Octokit;
+﻿
+using Github.Library;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using GClient = Github.Library.Github;
 
 namespace Github_API_Consumer.Controllers
 {
     public class RepoController : Controller
     {
-        GitHubClient github;
 
         public RepoController()
         {
-            github = new GitHubClient(new ProductHeaderValue("MyTestApp"));
-            var basicAuth = new Credentials("GithubAccount123123", "SNeCDt24UvjwfgCh"); // NOTE: not real credentials
-            github.Credentials = basicAuth;
+            
         }
         // GET: Repo
         public ActionResult Index()
         {
-            var repos = github.Repository.GetAllForCurrent();
-            var r = repos.Result;
-            return View(r);
+            Repository[] repos = GClient.getCurrentUserRepositories();
+            return View(repos);
         }
         [HttpGet]
         public ActionResult Create()
@@ -33,25 +31,21 @@ namespace Github_API_Consumer.Controllers
         [HttpPost]
         public ActionResult Create(string name, string type)
         {
-            NewRepository repo = new NewRepository(name) { };
-            if (type == "private")
-                repo.Private = true;
-            github.Repository.Create(repo);
+            GClient.createRepository(name);
             return RedirectToAction("Index");
         }
 
         [HttpGet]
         public ActionResult Delete()
         {
-            var repos = github.Repository.GetAllForCurrent();
-            var r = repos.Result;
-            return View(r);
+            var repos = GClient.getCurrentUserRepositories();
+            return View(repos);
         }
 
         [HttpPost]
-        public ActionResult Delete(int id)
+        public ActionResult Delete(string owner,string repo)
         {
-            github.Repository.Delete(id);
+            GClient.deleteRepository(owner, repo);
             return RedirectToAction("Index");
         }
     }

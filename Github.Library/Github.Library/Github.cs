@@ -10,12 +10,13 @@ using System.Threading.Tasks;
 
 namespace Github.Library
 {
-    public class Github
+    public static class Github
     {
         static HttpClient Client;
         public const string URL = "https://api.github.com";
 
-        public Github()
+        
+        static Github()
         {
             Client = new HttpClient();
             Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("token", "4115babe43140c5cd265720a9194e77eb4fba70c");
@@ -47,7 +48,7 @@ namespace Github.Library
 
         public static User getCurrentUser() => JsonConvert.DeserializeObject<User>(Get($"{URL}/user"));
 
-        public static User getUser(string _name) => JsonConvert.DeserializeObject<User>(Get($"{URL}/user/{_name}"));
+        public static User getUser(string _name) => JsonConvert.DeserializeObject<User>(Get($"{URL}/users/{_name}"));
 
         public static Repository[] getCurrentUserRepositories() => JsonConvert.DeserializeObject<Repository[]>(Get("https://api.github.com/user/repos"));
 

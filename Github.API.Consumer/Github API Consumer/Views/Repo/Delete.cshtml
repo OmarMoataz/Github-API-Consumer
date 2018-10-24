@@ -6,16 +6,22 @@
 <h2>Delete</h2>
 
 
-<form>
+<form method="post">
 
-<div class="form-group">
-    <label for="repos">My Repositories</label>
-    <select class="form-control" id="repos" name="id">
-        
-        @foreach (var item in Model)
-        {
-            <option value="@item.Id">@item.Name</option>
-        }
-    </select>
-</div>
+    <div class="form-group">
+        <input type="hidden" name="owner" value="@Model[0].Owner.Login" />
+
+        <div class="form-group">
+            <label style="color:white;" for="repo">My Repositories</label>
+            <select class="form-control" id="repos" name="repo">
+
+                @foreach (var item in Model)
+                {
+                    <option value="@item.Name">@item.Name</option>
+                }
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary mb-2">Delete</button>
+    </div>
 </form>
