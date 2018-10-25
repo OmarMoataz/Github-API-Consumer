@@ -17,16 +17,21 @@ namespace Github_API_Consumer.Controllers
            github = new GitHubClient(new ProductHeaderValue("MyTestApp"));
         }
         // GET: Search
-        public ActionResult Index(string q = "")
+        public ActionResult Index(string q = "", string filter = "repositories")
         {
             if (q == "")
             {
                 q = "default";
             }
-            var request = new SearchRepositoriesRequest(q);
-            var result = github.Search.SearchRepo(request);
-            var r = result.Result.Items.Take(25);
-            return View(r);
+            //return View(r);
+            Github.Library.Issue[] issues = GClient.searchIssues(q);
+            Github.Library.Repository[] repos = GClient.searchRepos(q);
+            Github.Library.User[] users = GClient.searchUsers(q);
+            ViewBag.repos = repos;
+            ViewBag.issues = issues;
+            ViewBag.users = users;
+            return View();
+
         }
 
         public new ActionResult User(string q)

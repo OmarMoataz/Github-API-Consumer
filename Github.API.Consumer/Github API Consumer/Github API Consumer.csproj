@@ -195,6 +195,9 @@
     <Content Include="Views\Repo\Index.cshtml" />
     <Content Include="Views\Repo\Delete.cshtml" />
     <Content Include="Views\Search\User.cshtml" />
+    <Content Include="Views\Search\_issue.cshtml" />
+    <Content Include="Views\Search\_repository.cshtml" />
+    <Content Include="Views\Search\_user.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

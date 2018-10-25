@@ -1,0 +1,24 @@
+﻿@model IEnumerable<Github.Library.User>
+
+<table class="table table-dark col-10">
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Avatar</th>
+            <th scope="col">Available for hire</th>
+            <th scope="col"> Url </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+
+            <tr>
+                <td>@item.Login</td>
+                <td> <a href="@item.HtmlUrl"> <img src="@item.AvatarUrl" style="height:30px; width: 60px; overflow:hidden"/>  </a></td>
+                <td> @item.Hireable </td>
+                <td><a href="@item.HtmlUrl"> Click here </a> </td>
+            </tr>
+        }
+    </tbody>
+</table>

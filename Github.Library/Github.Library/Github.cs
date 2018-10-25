@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +16,7 @@ namespace Github.Library
         static HttpClient Client;
         public const string URL = "https://api.github.com";
 
-        
+
         static Github()
         {
             Client = new HttpClient();
@@ -30,7 +31,6 @@ namespace Github.Library
             {
                 u += par;
             }
-
             return Client.GetStringAsync(url).Result;
         }
 
@@ -54,13 +54,33 @@ namespace Github.Library
 
         public static Repository[] getUserRepositories(string _name) => JsonConvert.DeserializeObject<Repository[]>(Get($"https://api.github.com/users/{_name}/repos"));
 
+        public static Issue[] searchIssues(string _query)
+        {
+            var json = JObject.Parse(Get($" https://api.github.com/search/issues?q={_query}"))["items"];
+            return (JsonConvert.DeserializeObject<Issue[]>(JsonConvert.SerializeObject(json)));
+        }
+
+        public static Repository[] searchRepos(string _query)
+        {
+            var json = JObject.Parse(Get($" https://api.github.com/search/repositories?q={_query}"))["items"];
+            return (JsonConvert.DeserializeObject<Repository[]>(JsonConvert.SerializeObject(json)));
+        }
+
+        public static User[] searchUsers(string _query)
+        {
+            var json = JObject.Parse(Get($" https://api.github.com/search/users?q={_query}"))["items"];
+            return (JsonConvert.DeserializeObject<User[]>(JsonConvert.SerializeObject(json)));
+        }
+
+        
+
         public static Repository createRepository(string _name, string _desc = null, bool _private = false) => JsonConvert.DeserializeObject<Repository>(Task.Run(() => PostAsync($"{URL}/user/repos",
-            new Dictionary<string, dynamic>
-            {
+                new Dictionary<string, dynamic>
+                {
                 { "name", _name },
                 { "description", _desc },
                 { "private", _private }
-            })).Result);
+                })).Result);
 
         public static HttpStatusCode deleteRepository(string owner, string name) =>
             Client.DeleteAsync($"{URL}/repos/{owner}/{name}").Result.StatusCode;
