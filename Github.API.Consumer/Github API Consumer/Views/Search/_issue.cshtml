@@ -3,9 +3,9 @@
 <table class="table table-dark col-10">
     <thead>
         <tr>
+            <th scope="col"> Issue Id </th>
             <th scope="col">Title</th>
-            <th scope="col"> Repo Link </th>
-            <th scope="col"> Issue Link </th>
+            <th scope="col"> Issues </th>
             <th scope="col"> Owner </th>
         </tr>
     </thead>
@@ -13,8 +13,8 @@
         @foreach (var item in Model)
         {
             <tr>
+                <td> @item.Number </td>
                 <td>@item.Title</td>
-                <td> <a href="@item.Repository_url"> Repo </a> </td>
                 <td> <a href="@item.Html_url"> Issue </a> </td>
                 <td> <a href="@item.User.HtmlUrl"> @item.User.Login </a></td>
             </tr>

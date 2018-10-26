@@ -72,6 +72,11 @@ namespace Github.Library
             return (JsonConvert.DeserializeObject<User[]>(JsonConvert.SerializeObject(json)));
         }
 
+        //public static Code[] searchCode(string _query)
+        //{
+        //    var json = JObject.Parse(Get($"https://api.github.com/search/code?q=addClass+language:js"));
+        //}
+
         
 
         public static Repository createRepository(string _name, string _desc = null, bool _private = false) => JsonConvert.DeserializeObject<Repository>(Task.Run(() => PostAsync($"{URL}/user/repos",

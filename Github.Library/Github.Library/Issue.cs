@@ -30,6 +30,6 @@ namespace Github.Library
         [JsonProperty("title")]
         public string Title { get; set; }
         [JsonProperty("user")]
-        public User User { get; set; }
+        public User User { get; set; }  
     }
 }
