@@ -1,7 +1,8 @@
+This project was made with ♥ by <br>
 Ahmed Ghanima <br>
-Omar Attia
+Omar Moataz <br> 
 
-Asp Project <br>
+.NET Version: 4.6 <br>
 
 RepositoryController <br> 
 
@@ -40,4 +41,3 @@ User <br>
 URL: http://~/Search/User?q=octocat <br>
 Description: Search github for a specific user and get more details about them <br>
 ![alt text](https://github.com/OmarMoataz/Github-API-Consumer/blob/master/Docs%20Images/search_user.png)
-
