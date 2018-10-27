@@ -1,4 +1,4 @@
-﻿using Octokit;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,10 +11,9 @@ namespace Github_API_Consumer.Controllers
     
     public class SearchController : Controller
     {
-        GitHubClient github;
+
         public SearchController()
         {
-           github = new GitHubClient(new ProductHeaderValue("MyTestApp"));
         }
         // GET: Search
         public ActionResult Index(string q = "")
