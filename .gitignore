@@ -330,3 +330,4 @@ ASALocalRun/
 *.pdb
 
 .vs/*
+Github.API.Consumer/.vs/config/applicationhost.config

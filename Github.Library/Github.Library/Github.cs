@@ -23,7 +23,7 @@ namespace Github.Library
         static Github()
         {
             Client = new HttpClient();
-            Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("token", "7cc6bda66aa01b03eb283d1449a242e50c8e9dbc");
+            Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("token", "439235e6de5025146aee476be292929d10d96174");
             Client.DefaultRequestHeaders.Add("User-Agent", "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36");
 
         }

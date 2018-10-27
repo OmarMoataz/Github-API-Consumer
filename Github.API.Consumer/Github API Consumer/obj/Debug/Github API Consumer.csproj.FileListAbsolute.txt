@@ -210,7 +210,6 @@ C:\Users\JA\Documents\GitHub\Github-API-Consumer\Github.API.Consumer\Github API 
 C:\Users\JA\Documents\GitHub\Github-API-Consumer\Github.API.Consumer\Github API Consumer\bin\WebGrease.dll
 C:\Users\JA\Documents\GitHub\Github-API-Consumer\Github.API.Consumer\Github API Consumer\bin\Github.Library.pdb
 C:\Users\JA\Documents\GitHub\Github-API-Consumer\Github.API.Consumer\Github API Consumer\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\JA\Documents\GitHub\Github-API-Consumer\Github.API.Consumer\Github API Consumer\bin\Newtonsoft.Json.xml
 C:\Users\JA\Documents\GitHub\Github-API-Consumer\Github.API.Consumer\Github API Consumer\bin\Octokit.xml
 C:\Users\JA\Documents\GitHub\Github-API-Consumer\Github.API.Consumer\Github API Consumer\bin\System.Web.Helpers.xml
 C:\Users\JA\Documents\GitHub\Github-API-Consumer\Github.API.Consumer\Github API Consumer\bin\System.Web.Mvc.xml
