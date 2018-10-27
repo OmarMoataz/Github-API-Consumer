@@ -1,11 +1,6 @@
-﻿
-using Github.Library;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using GClient = Github.Library.Github;
+using Github.Library.Entities;
 
 namespace Github_API_Consumer.Controllers
 {

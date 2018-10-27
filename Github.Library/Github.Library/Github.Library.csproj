@@ -44,13 +44,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AccountType.cs" />
-    <Compile Include="Code.cs" />
+    <Compile Include="Entities\AccountType.cs" />
+    <Compile Include="Entities\Code.cs" />
     <Compile Include="Github.cs" />
-    <Compile Include="Issue.cs" />
+    <Compile Include="Entities\Issue.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repository.cs" />
-    <Compile Include="User.cs" />
+    <Compile Include="Entities\Repository.cs" />
+    <Compile Include="Entities\User.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

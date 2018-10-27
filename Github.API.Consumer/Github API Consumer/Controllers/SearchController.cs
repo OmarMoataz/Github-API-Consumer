@@ -1,10 +1,6 @@
-﻿
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using GClient = Github.Library.Github;
+using Github.Library.Entities;
 
 namespace Github_API_Consumer.Controllers
 {
@@ -22,9 +18,9 @@ namespace Github_API_Consumer.Controllers
             {
                 q = "default";
             }
-            Github.Library.Issue[] issues = GClient.searchIssues(q);
-            Github.Library.Repository[] repos = GClient.searchRepos(q);
-            Github.Library.User[] users = GClient.searchUsers(q);
+            Issue[] issues = GClient.searchIssues(q);
+            Repository[] repos = GClient.searchRepos(q);
+            User[] users = GClient.searchUsers(q);
             ViewBag.repos = repos;
             ViewBag.issues = issues;
             ViewBag.users = users;
