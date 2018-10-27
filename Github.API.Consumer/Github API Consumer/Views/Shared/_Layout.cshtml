@@ -9,16 +9,13 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Github API Consumer</a>
+        <a class="navbar-brand" href="~/search/index">Github API Consumer</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a href="/Search" class="nav-link">Home</a>
-                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Repositories
@@ -31,25 +28,12 @@
                         <a class="dropdown-item" href="/Repo/">My Repositories</a>
                     </div>
                 </li>
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Search
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                        <a class="dropdown-item" href="/Search">Search User</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="/Search">Search Repositories</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="/Search">Search Issues</a>
-                    </div>
-                </li>
             </ul>
 
         </div>
         
         <form class="form-inline" action="~/search/index">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="q">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="q" value="@Request.QueryString["q"]">
             <button class="btn btn-light my-2 my-sm-0" type="submit">Search</button>
         </form>
     </nav>

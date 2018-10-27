@@ -17,19 +17,19 @@ namespace Github_API_Consumer.Controllers
            github = new GitHubClient(new ProductHeaderValue("MyTestApp"));
         }
         // GET: Search
-        public ActionResult Index(string q = "", string filter = "repositories")
+        public ActionResult Index(string q = "")
         {
             if (q == "")
             {
                 q = "default";
             }
-            //return View(r);
             Github.Library.Issue[] issues = GClient.searchIssues(q);
             Github.Library.Repository[] repos = GClient.searchRepos(q);
             Github.Library.User[] users = GClient.searchUsers(q);
             ViewBag.repos = repos;
             ViewBag.issues = issues;
             ViewBag.users = users;
+            ViewBag.query = q;
             return View();
 
         }

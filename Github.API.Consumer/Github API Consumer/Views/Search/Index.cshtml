@@ -1,36 +1,8 @@
 ﻿@using Github.Library
 
-<h2> Results </h2>
-
-@*<div class="row">
-    <div class="row">
-        <div class="col-3">
-            <div class="list-group" id="list-tab" role="tablist" >
-                <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Repositories</a>
-                <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Issues</a>
-                <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Users</a>
-                <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Code</a>
-            </div>
-        </div>
-        <div class="col-9">
-            <div class="tab-content" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-                    @Html.Partial("_repository", (IEnumerable<Repository>)@ViewBag.repos)
-                    
-                </div>
-                <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
-                    @Html.Partial("_issue", (IEnumerable<Issue>)ViewBag.issues)
-                </div>
-                <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
-                    @Html.Partial("_user", (IEnumerable<User>)ViewBag.users)
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    
-</div>*@
-
+<p style="color:white">
+    Showing results for "@ViewBag.query"
+</p>
 
 <div class="row">
     <div class="col-2">
