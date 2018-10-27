@@ -16,11 +16,14 @@ namespace Github.Library
         static HttpClient Client;
         public const string URL = "https://api.github.com";
 
-
+        /*
+            TestAccount12312387
+            XpUX7ra89GVekwJp
+         */
         static Github()
         {
             Client = new HttpClient();
-            Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("token", "4115babe43140c5cd265720a9194e77eb4fba70c");
+            Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("token", "7cc6bda66aa01b03eb283d1449a242e50c8e9dbc");
             Client.DefaultRequestHeaders.Add("User-Agent", "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36");
 
         }

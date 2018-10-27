@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Github API Consumer", "Github API Consumer\Github API Consumer.csproj", "{7DA448C0-4A4D-43EA-8A7D-A072C6FA9717}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Github.Library", "..\Github.Library\Github.Library\Github.Library.csproj", "{2BBF6951-31BA-43F8-BA2E-C94E5B8ECD82}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{7DA448C0-4A4D-43EA-8A7D-A072C6FA9717}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7DA448C0-4A4D-43EA-8A7D-A072C6FA9717}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7DA448C0-4A4D-43EA-8A7D-A072C6FA9717}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BBF6951-31BA-43F8-BA2E-C94E5B8ECD82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BBF6951-31BA-43F8-BA2E-C94E5B8ECD82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BBF6951-31BA-43F8-BA2E-C94E5B8ECD82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BBF6951-31BA-43F8-BA2E-C94E5B8ECD82}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
